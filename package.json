@@ -28,19 +28,18 @@
     "vscode": "^1.69.0"
   },
   "activationEvents": [
-    "onStartupFinished",
-    "onCommand:vscode-filename-fake.fake"
+    "onCommand:vscode-filename-fake.run"
   ],
   "contributes": {
     "commands": [
       {
-        "command": "vscode-filename-fake.fake",
+        "command": "vscode-filename-fake.run",
         "title": "Fake FileName"
       }
     ],
     "keybindings": [
       {
-        "command": "vscode-filename-fake.fake",
+        "command": "vscode-filename-fake.run",
         "key": "Cmd+5"
       }
     ]

@@ -20,7 +20,7 @@ export async function activate(context: vscode.ExtensionContext) {
     console.log('file.json exists')
   }
 
-  const disposable = vscode.commands.registerCommand('vscode-filename-fake.fake', async () => {
+  const disposable = vscode.commands.registerCommand('vscode-filename-fake.run', async () => {
     const openList = vscode.workspace.textDocuments
 
     const json = Buffer.from(await vscode.workspace.fs.readFile(fileUri)).toString('utf8')
