@@ -49,7 +49,7 @@
     "dev": "nr build --watch",
     "lint": "eslint .",
     "vscode:prepublish": "nr build",
-    "publish": "vsce publish ---no-dependencies",
+    "publish": "vsce publish --no-dependencies",
     "pack": "vsce package --no-dependencies ",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
