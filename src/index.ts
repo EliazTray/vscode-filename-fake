@@ -1,6 +1,6 @@
 import path from 'path'
 import fs from 'fs'
-import N from 'nanoid'
+import { nanoid } from 'nanoid'
 import vscode from 'vscode'
 
 interface IData {
@@ -46,7 +46,7 @@ export async function activate(context: vscode.ExtensionContext) {
       // TODO: support other suffix
       else if (/\d+\.[\s\S]+\.(js|ts)/g.test(base)) {
         const text = file.getText()
-        const UUID = N.nanoid()
+        const UUID = nanoid()
         const newFilePath = `${dir}/${UUID}.js`
         // do store global content with unique id, and origin baseName for later recover
         data[UUID] = {
