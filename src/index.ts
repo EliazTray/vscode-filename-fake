@@ -69,7 +69,7 @@ function template() {
   import Hash from './Hash.js'
   
   /**
-   * Gets the data for `map`.
+   * Gets the data for \`map\`.
    *
    * @private
    * @param {Object} map The map to query.
@@ -84,11 +84,11 @@ function template() {
   }
   
   /**
-   * Checks if `value` is suitable for use as unique object key.
+   * Checks if \`value\` is suitable for use as unique object key.
    *
    * @private
    * @param {*} value The value to check.
-   * @returns {boolean} Returns `true` if `value` is suitable, else `false`.
+   * @returns {boolean} Returns \`true\` if \`value\` is suitable, else \`false\`.
    */
   function isKeyable(value) {
     const type = typeof value
@@ -132,11 +132,11 @@ function template() {
     }
   
     /**
-     * Removes `key` and its value from the map.
+     * Removes \`key\` and its value from the map.
      *
      * @memberOf MapCache
      * @param {string} key The key of the value to remove.
-     * @returns {boolean} Returns `true` if the entry was removed, else `false`.
+     * @returns {boolean} Returns \`true\` if the entry was removed, else \`false\`.
      */
     delete(key) {
       const result = getMapData(this, key)['delete'](key)
@@ -145,7 +145,7 @@ function template() {
     }
   
     /**
-     * Gets the map value for `key`.
+     * Gets the map value for \`key\`.
      *
      * @memberOf MapCache
      * @param {string} key The key of the value to get.
@@ -156,18 +156,18 @@ function template() {
     }
   
     /**
-     * Checks if a map value for `key` exists.
+     * Checks if a map value for \`key\` exists.
      *
      * @memberOf MapCache
      * @param {string} key The key of the entry to check.
-     * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+     * @returns {boolean} Returns \`true\` if an entry for \`key\` exists, else \`false\`.
      */
     has(key) {
       return getMapData(this, key).has(key)
     }
   
     /**
-     * Sets the map `key` to `value`.
+     * Sets the map \`key\` to \`value\`.
      *
      * @memberOf MapCache
      * @param {string} key The key of the value to set.
@@ -185,7 +185,7 @@ function template() {
   }
   
   export default MapCache
-  `
+`
 }
 
 export function deactivate() {
