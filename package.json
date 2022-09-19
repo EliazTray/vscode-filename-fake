@@ -1,24 +1,20 @@
 {
-  "publisher": "antfu",
-  "name": "ext-name",
-  "displayName": "ext-name",
+  "publisher": "eliaztray",
+  "name": "vscode-filename-fake",
+  "displayName": "vscode-filename-fake",
   "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@7.8.0",
   "description": "",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "author": "EliazTray <944126009yh@gmail.com>",
   "license": "MIT",
-  "funding": "https://github.com/sponsors/antfu",
-  "homepage": "https://github.com/antfu/ext-name#readme",
+  "homepage": "https://github.com/eliaztray/vscode-filename-fake#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/antfu/ext-name"
+    "url": "https://github.com/antfu/vscode-filename-fake"
   },
   "bugs": {
-    "url": "https://github.com/antfu/ext-name/issues"
-  },
-  "sponsor": {
-    "url": "https://github.com/sponsors/antfu"
+    "url": "https://github.com/antfu/vscode-filename-fake/issues"
   },
   "categories": [
     "Other"
@@ -32,8 +28,23 @@
     "vscode": "^1.69.0"
   },
   "activationEvents": [
-    "onStartupFinished"
+    "onStartupFinished",
+    "onCommand:filename-fake.fake"
   ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "filename-fake.fake",
+        "title": "Fake FileName"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "filename-fake.fake",
+        "key": "Cmd+5"
+      }
+    ]
+  },
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
     "dev": "nr build --watch",
@@ -44,6 +55,9 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "release": "bumpp && nr publish"
+  },
+  "dependencies": {
+    "nanoid": "^3.3.4"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
