@@ -29,18 +29,18 @@
   },
   "activationEvents": [
     "onStartupFinished",
-    "onCommand:filename-fake.fake"
+    "onCommand:vscode-filename-fake.fake"
   ],
   "contributes": {
     "commands": [
       {
-        "command": "filename-fake.fake",
+        "command": "vscode-filename-fake.fake",
         "title": "Fake FileName"
       }
     ],
     "keybindings": [
       {
-        "command": "filename-fake.fake",
+        "command": "vscode-filename-fake.fake",
         "key": "Cmd+5"
       }
     ]
