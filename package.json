@@ -2,7 +2,7 @@
   "publisher": "eliaztray",
   "name": "vscode-filename-fake",
   "displayName": "vscode-filename-fake",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "private": true,
   "packageManager": "pnpm@7.8.0",
   "description": "",
