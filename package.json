@@ -11,10 +11,10 @@
   "homepage": "https://github.com/eliaztray/vscode-filename-fake#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/antfu/vscode-filename-fake"
+    "url": "https://github.com/eliaztray/vscode-filename-fake"
   },
   "bugs": {
-    "url": "https://github.com/antfu/vscode-filename-fake/issues"
+    "url": "https://github.com/eliaztray/vscode-filename-fake/issues"
   },
   "categories": [
     "Other"
